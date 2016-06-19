@@ -1,0 +1,45 @@
+body{
+  font-size: 62.5%;
+  background:#ebebeb;
+}
+i{
+  font-size:0.6rem !important;
+}
+header {
+  z-index:999;
+  position:fixed;
+  width: 100%;
+  top: 0;
+  .top {
+    width: 100%;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    background: $top-bg;
+    color: #fff;
+    text-align: center;
+    .back {
+      margin-left: 0.5rem;
+      display: inline-block;
+      position:absolute;
+      top: 0;
+      left:0;
+    }
+    a{
+      color:#fff;
+      &:hover{
+        color:$a-hover;
+      }
+    }
+  }
+  nav {
+    height: 1.3rem;
+    background: $nav-bg;
+    border-bottom: 0.03125rem solid #ccc ;
+    .banner div.btn-more {
+      float:left;
+      line-height:1.3rem;
+      height: 1.3rem;
+      display:inline-block;
+    }
+  }
+}

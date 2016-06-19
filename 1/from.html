@@ -7,18 +7,78 @@
     <title>test</title>
     <script src="./src/style/script/util.js"></script>
     <link rel="stylesheet" href="./src/style/main/main.css">
-    <link rel="stylesheet" href="./src/style/main/index.css">
+    <link rel="stylesheet" href="./src/style/main/from.css">
     <link rel="stylesheet" href="./src/style/main/weui.css">
 </head>
-<body ontouchstart="much">
+<body>
   <div class="container">
     <header>
       <!-- 后退  -->
       <div class="top">
         <div class="back"><a href=""><i class="iconfont">&#xe693;</i> 返回</a></div>
-        <p class="tit">产品中心</p>
+        <p class="tit">立即购买</p>
       </div>
     </header>
+    <div class="contents">
+      <div class="t">
+        <div>
+          <p class="title">虚拟产品收货方式</p>
+          <p class="content">支付成功后，我们将会往您填写的联系方式发送产品使用方法，相关网址网站等</p>
+        </div>
+      </div>
+      <div class="s">
+        <div class="img">
+          <div class="content">
+            <img src="./src/img/1.jpg">
+          </div>
+        </div>
+        <div class="content">
+          <div class="main">
+            <div class="title">水彩课程零基础</div>
+            <div class="muchs">
+              <p class="much">￥199</p>
+              <p class="cost">原价260元</p>
+              <p class="num">数量：1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <div class="weui_cell">
+          <div class="weui_cell_hd"><label class="weui_label">姓名</label></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" type="text" placeholder="请填写你的姓名">
+          </div>
+        </div>
+        <div class="weui_cell">
+          <div class="weui_cell_hd"><label class="weui_label">手机</label></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" type="number" pattern="[0-9]*" placeholder="请填写你的手机">
+          </div>
+        </div>
+        <div class="weui_cell">
+          <div class="weui_cell_hd"><label class="weui_label">QQ</label></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" type="number" pattern="[0-9]*" placeholder="请填写你的QQ">
+          </div>
+        </div>
+        <div class="weui_cell">
+          <div class="weui_cell_hd"><label class="weui_label">E-mail</label></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" type="mail" placeholder="请填写你的E-mail">
+          </div>
+        </div>
+        <div class="weui_cell">
+          <div class="weui_cell_hd"><label class="weui_label">留言</label></div>
+          <div class="weui_cell_bd weui_cell_primary">
+            <input class="weui_input" type="text">
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <p>立即微信支付199元</p>
+    </footer>
   </div>
 </body>
 </html>
