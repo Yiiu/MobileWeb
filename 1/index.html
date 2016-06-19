@@ -1,0 +1,157 @@
+<html lang="zh-CN" data-dpr="1">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./src/style/main/weui.css">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="email=no" name="format-detection" />  <!-- 邮件  -->
+    <title>test</title>
+    <script src="./src/style/script/util.js"></script>
+    <link rel="stylesheet" href="./src/style/main/main.css">
+    <link rel="stylesheet" href="./src/style/main/index.css">
+    <link rel="stylesheet" href="./src/style/main/weui.css">
+</head>
+<body ontouchstart="much">
+  <div class="container">
+    <header>
+      <!-- 后退  -->
+      <div class="top">
+        <div class="back"><a href=""><i class="iconfont">&#xe693;</i> 返回</a></div>
+        <p class="tit">产品中心</p>
+      </div>
+      <nav>
+        <div class="banner">
+          <div class="btn-more"><a href="javascript:;" id="btn"><i class="iconfont ">&#x343a;</i></a></div>
+          <ul class="banner">
+            <li><a href="#" class="me">推荐</a></li>
+            <li><a href="#">在线课</a></li>
+            <li><a href="#">直播课</a></li>
+            <li><a href="#">数位板</a></li>
+            <li><a href="#">书籍</a></li>
+          </ul>
+        </div>
+        <div class="more none" id="more">
+          <ul>
+            <li>
+              <div class="img"></div>
+              <p>水彩课</p>
+            </li>
+            <li>
+              <div class="img"></div>
+              <p>水彩课</p>
+            </li>
+            <li>
+              <div class="img"></div>
+              <p>水彩课</p>
+            </li>
+            <li>
+              <div class="img"></div>
+              <p>水彩课</p>
+            </li>
+            <li>
+              <div class="img"></div>
+              <p>水彩课</p>
+            </li>
+            <li>
+              <div class="img"></div>
+              <p>水彩课</p>
+            </li>
+            <li>
+              <div class="img"></div>
+              <p>水彩课</p>
+            </li>
+            <li>
+              <div class="img"></div>
+              <p>水彩课</p>
+            </li>
+            <li>
+              <div class="img"></div>
+              <p>水彩课</p>
+            </li>
+            <li>
+              <div class="img"></div>
+              <p>水彩课</p>
+            </li>
+          </ul>
+          <div class="v"><a href="javascript:;" id="btn"><i class="iconfont" id="v">&#xe614;</i></a></div>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="coms">
+        <div class="com">
+          <div class="img"><img src="./src/img/1.jpg"></div>
+          <div class="title"><a href="#">水彩课程零基础</a></div>
+          <div class="cont">
+            <span class="much">￥12</span>
+            <span class="num">12人购买</span>
+          </div>
+        </div>
+        <div class="com">
+        <div class="img"><img src="./src/img/1.jpg"></div>
+          <div class="title"><a href="#">水彩课程零基础</a></div>
+          <div class="cont">
+            <span class="much free">免费</span>
+            <span class="num">12人购买</span>
+          </div>
+        </div>
+        <div class="com">
+          <div class="img"><img src="./src/img/1.jpg"></div>
+          <div class="title"><a href="#">水彩课程零基础</a></div>
+          <div class="cont">
+            <span class="much">￥12</span>
+            <span class="num">12人购买</span>
+          </div>
+        </div>
+        <div class="com">
+          <div class="img"><img src="./src/img/1.jpg"></div>
+          <div class="title"><a href="#">水彩课程零基础</a></div>
+          <div class="cont">
+            <span class="much">￥12</span>
+            <span class="num">12人购买</span>
+          </div>
+        </div>
+        <div class="com">
+          <div class="img"><img src="./src/img/1.jpg"></div>
+          <div class="title"><a href="#">水彩课程零基础</a></div>
+          <div class="cont">
+            <span class="much">￥12</span>
+            <span class="num">12人购买</span>
+          </div>
+        </div>
+      </div>
+      <p class="not">没有了</p>
+    </div>
+    <footer>
+      <div>
+        <a href="#">产品中心</a>
+      </div>
+      <div>
+        <a href="#">我的购买</a>
+      </div>
+      <div>
+        <a href="#">个人中心</a>
+      </div>
+    </footer>
+  </div>
+</body>
+<script>
+(function(){
+  var btn = document.getElementById("btn");
+  var box = document.getElementById("more");
+  var v = document.getElementById("v");
+  var b = false;
+  btn.onclick = btns;
+  v.onclick = btns;
+  function btns(){
+    if(!b){
+      box.className = box.className.replace(/ none/,"")
+      b = true;
+    }else{
+      box.className += " none";
+      b = false;
+    }
+  }
+})()
+</script>
+</html>
